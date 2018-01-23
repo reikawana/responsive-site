@@ -19,8 +19,11 @@ body {
 /* Header
 ------------------------------------------------------------*/
 .top-image {
-  display: block;
-  width: 100%; }
+  background-image: url("../image/image-resize.png");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
 
 /* main
 ------------------------------------------------------------*/
@@ -38,28 +41,31 @@ body {
   #maintext h2 {
     margin: 0;
     font-size: 1.8em;
-    background-color: #f0fffa; }
+    background-color: #f0fffa;
+    text-transform: uppercase; }
   #maintext .box {
     -webkit-flex: 1;
     flex: 1;
     margin: 10px 0;
-    padding: 20px;
+    padding: 0px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    background-color: #ffffff; }
     #maintext .box p {
-      padding: 20px;
-      background-color: #ffffff; }
+      padding: 20px; }
 
 /* footer
 ------------------------------------------------------------*/
 footer {
   background-color: #f0fffa;
   margin: 0;
-  padding: 0; }
+  padding: 40px 0; }
+  footer h3 {
+    margin-bottom: 20px; }
   footer .button {
     margin: auto;
     width: 150px;
@@ -70,6 +76,13 @@ footer {
     border-radius: 4px; }
 
 @media (min-width: 769px) {
+  .top-image {
+    background-image: url("../image/image-resize.png");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; }
+
   #maintext .container {
     -webkit-flex-direction: row;
     flex-direction: row;
